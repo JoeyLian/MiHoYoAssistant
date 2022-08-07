@@ -171,7 +171,7 @@ class SignRequest(BaseRequest):
                 log.error('Http response is None...')
                 continue
             code = response.get('retcode', 9999)
-            print(code)
+            print(response)
             if code != 0:
                 msg_infos.append(response)
                 continue
