@@ -171,9 +171,11 @@ class SignRequest(BaseRequest):
                 log.error('Http response is None...')
                 continue
             code = response.get('retcode', 9999)
+            print(code)
             if code != 0:
                 msg_infos.append(response)
                 continue
+            print(msg_infos)
             message['total_sign_day'] = total_sign_day + 1
             message['sign_state'] = response['message']
             msg_infos.append(self.message.format(**message))
