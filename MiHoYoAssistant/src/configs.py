@@ -7,7 +7,7 @@ version = 'v1.0.0.0'
 
 class Config:
     ACT_ID = 'e202009291139501'
-    APP_VERSION = '2.3.0'
+    APP_VERSION = '2.34.1'
     REFERER_URL = 'https://webstatic.mihoyo.com/bbs/event/signin-ys/index.html?' \
                   'bbs_auth_required={}&act_id={}&utm_source={}&utm_medium={}&' \
                   'utm_campaign={}'.format('true', ACT_ID, 'bbs', 'mys', 'icon')
