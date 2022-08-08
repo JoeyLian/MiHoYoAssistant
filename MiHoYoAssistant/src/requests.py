@@ -75,7 +75,7 @@ class SignRequest(BaseRequest):
     @staticmethod
     def getDigest():
         # v2.3.0-web @povsister & @journey-ad
-        n = 'h8w582wxwgqvahcdkpvdhbh2w9casgfl'
+        n = '9nQiU3AV0rJSIBWgdynfoGMGKaklfbM7'
         i = str(int(time.time()))
         r = ''.join(random.sample(string.ascii_lowercase + string.digits, 6))
         c = hexdigest('salt=' + n + '&t=' + i + '&r=' + r)
